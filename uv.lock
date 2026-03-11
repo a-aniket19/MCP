@@ -483,6 +483,7 @@ dependencies = [
     { name = "httpx" },
     { name = "mcp" },
     { name = "notion-client" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
@@ -493,6 +494,7 @@ requires-dist = [
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "mcp", specifier = ">=1.26.0" },
     { name = "notion-client", specifier = ">=3.0.0" },
+    { name = "python-dotenv", specifier = ">=1.2.1" },
 ]
 
 [[package]]
