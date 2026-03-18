@@ -1,9 +1,13 @@
 import httpx
 from mcp.server.fastmcp import FastMCP
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 mcp = FastMCP("Weather")
 
-API_KEY = "f9698e47577fe4f4076ebc03507edbdf"
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 @mcp.tool()
